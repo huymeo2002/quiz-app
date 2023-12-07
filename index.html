@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO(you): Make whatever changes needed to complete the assignment! -->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+  </head>
+
+  <body>
+    <!--
+
+    ******************************************
+    DO NOT TRANSCRIBE THE ARTICLE YOURSELF!!!!
+    ******************************************
+
+    You do not have to type in all of the text on the page!
+
+    The contents of the article is in `index-content.txt`, which is
+    included in this directory. Copy and paste the contents of that file into
+    this HTML file as needed. You should only need to add HTML to markup the
+    content.
+
+  -->
+    <div class="grid">
+      <header>
+        <!--  -->
+        <div id="course-name">WPR</div>
+        <div id="stack-circle">
+          <span>M</span>
+          <span>E</span>
+          <span>R</span>
+          <span>N</span>
+        </div>
+      </header>
+
+      <article>
+        <section id="quiz-name">
+          <h1>HTML Quiz</h1>
+        </section>
+
+        <section id="introduction">
+          <p id="author">By Quang Huy</p>
+          <div id="intro">
+            <h2>The Test</h2>
+            <p>The test contains 10 questions and there is no time limit.</p>
+            <p>
+              The test is not official, it's just a nice way to see how much you
+              know, or don't know, about HTML
+            </p>
+            <h2>Count Your Score</h2>
+            <p>
+              You will get 1 point for each correct answer. At the end of the
+              Quiz, your total score will be displayed. Maximum score is 10
+              points.
+            </p>
+          </div>
+          <div class="boxes" id="box-start">
+            <h2>Start the quiz</h2>
+            <p>Good luck!</p>
+            <button class="blue-btn" id="btn-start">
+              Start the HTML quiz ❯
+            </button>
+          </div>
+        </section>
+
+        <section class="hidden" id="attempt-quiz">
+          <div id="attempt">
+            <div id="questionsBox"></div>
+          </div>
+          <div class="boxes" id="box-submit">
+            <button class="green-btn" id="btn-submit">
+              Submit your answers ❯
+            </button>
+          </div>
+        </section>
+
+        <section class="hidden" id="review-quiz">
+          <!--  -->
+          <div id="review"></div>
+
+          <div class="boxes" id="box-result">
+            <h2>Result:</h2>
+            <div class="score">0/10</div>
+            <div class="percentage">0%</div>
+            <div class="advice">Practice more to improve it :D</div>
+            <button class="blue-btn" id="btn-try-again">Try again</button>
+          </div>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

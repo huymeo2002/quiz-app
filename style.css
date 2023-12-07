@@ -1,0 +1,178 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+body{
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #222222;
+    margin-left: 80px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+p{
+    margin: 18px 0px 18px 0px;
+}
+
+#course-name{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+}
+
+#stack-circle span {
+    background-color: #ffee00;
+    border-radius: 100%;
+    font-weight: bold;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    transform: rotate(-30deg);
+}
+
+/*Screen1*/
+#quiz-name{
+    height: 425px;
+    width: 700px;
+    background-image: url("../a1_2001040096/images/background.jpg");
+    background-size: cover;   
+    text-align: center;
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+}
+
+#quiz-name h1{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 75%;
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(120%);
+}
+
+#author{
+    font-size: 14px;
+    text-align: center;
+}
+
+.boxes{
+    background-color: #f1f1f1;
+    border: 1px solid;
+    border-color: #dcdcdc;
+    text-align: center;
+}
+
+button{
+    color: white;
+    font-size: 18px;
+    padding: 18px;
+    transition-duration: 0.4s;
+    margin: 18px;
+    border: 0px;
+} 
+
+.blue-btn{
+    background-color: #2196F3;
+}
+
+.blue-btn:hover{
+    background-color: #0d8bf2;
+}
+
+.green-btn{
+    background-color: #4CAF50;
+}
+
+.green-btn:hover{
+    background-color: #46a049;
+}
+
+/*Screen2*/
+.option{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #f1f1f1;
+    transition-duration: 0.4s;
+    margin: 1px;
+}
+
+.option:hover{
+    background-color: #ddd;
+    cursor: default;
+}
+
+.option-box{
+    margin: 30px 0px 30px 0px;
+}
+
+input{
+    position:absolute;
+    left: 15px;
+}
+
+.selected-option{
+    background-color: #ddd;
+}
+
+/* 
+input:checked + .options{
+    background-color: #ddd;
+} */
+
+.option p{
+    margin: 0;
+}
+
+.options{
+    inset: 0;
+    padding: 15px 0 15px 45px;
+    max-width: 700px;
+    width: 100%;
+}
+
+/*Screen3*/
+.correct-answer{
+    background: #d4edda;
+}
+
+.option-correct {
+    background: #ddd;
+}
+
+.wrong-answer{
+    background: #f8d7da;
+}
+
+.answer-des {
+    position: absolute;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .grid {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .stack-circle {
+        display: none;
+    }
+}
+
+.hidden{
+    display: none;
+}
